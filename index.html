@@ -7,5 +7,67 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>Sign Up Form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="image-sidebar">
+        <div class="image">
+          <img src="/assets/images/halie-west-25xggax4bSA-unsplash.jpg" alt="Green leafs" />
+        </div>
+        <div class="logo-container">
+          <img src="/assets/images/odin-lined.png" alt="Website logo" />
+          <h2>ODIN</h2>
+        </div>
+        <div class="image-credit">
+          <p>
+            Photo by
+            <a
+              href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Halie West</a
+            >
+            on
+            <a
+              href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <p>
+          This is not a real online service! You know you need something llike this in your life to
+          help you realize your deepest dreams. Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+        <p>Let's do this!</p>
+        <form action="#">
+          <div class="fname-container">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required />
+          </div>
+          <div class="lname-container">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required />
+          </div>
+          <div class="email-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="phone-num-container">
+            <label for="phone-num">Phone Number</label>
+            <input type="tel" name="phone-num" id="phone-num" required />
+          </div>
+          <div class="password-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="confirm-password-container">
+            <label for="confirm-password">Confrm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" required />
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </main>
+  </body>
 </html>
