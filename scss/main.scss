@@ -1,1 +1,5 @@
-@import 'resets';
+@import 'resets', 'variables', 'image-sidebar';
+
+main {
+  width: 100vw;
+}
