@@ -433,6 +433,14 @@ template {
   border: 1px solid red;
 }
 
+.content form button {
+  background: #596d48;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 7px 13px;
+  border: 0;
+  border-radius: 5px;
+}
+
 main {
   width: 100vw;
 }
