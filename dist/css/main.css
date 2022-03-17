@@ -406,6 +406,33 @@ template {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
+.content form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.content form div input {
+  width: 10rem;
+  border: 1px solid #e5e7eb;
+}
+
+.content form div input:focus {
+  border: 1px solid blue;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 2px 0px rgba(189, 188, 188, 0.75);
+          box-shadow: 4px 4px 2px 0px rgba(189, 188, 188, 0.75);
+}
+
+.content form div input:invalid:focus {
+  border: 1px solid red;
+}
+
 main {
   width: 100vw;
 }
