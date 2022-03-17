@@ -441,6 +441,12 @@ template {
   border-radius: 5px;
 }
 
+.content p a {
+  color: #596d48;
+  text-decoration: none;
+  font-size: larger;
+}
+
 main {
   width: 100vw;
 }
