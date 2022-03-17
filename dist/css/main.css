@@ -397,6 +397,15 @@ template {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.content {
+  padding: 1rem;
+}
+
+.content p,
+.content label {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
 main {
   width: 100vw;
 }
