@@ -408,7 +408,6 @@ template {
 
 .content {
   padding: 1rem;
-  padding-top: 5rem;
 }
 
 .content form .form-controls div {
@@ -421,6 +420,12 @@ template {
           flex-direction: column;
   margin-bottom: 1rem;
   width: 11rem;
+}
+
+.content form .form-controls div label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 .content form .form-controls div input {
@@ -447,6 +452,18 @@ template {
   border-radius: 5px;
 }
 
+.content p {
+  font-weight: 700;
+}
+
+.content p:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.content p:last-child {
+  font-weight: inherit;
+}
+
 .content p a {
   color: #596d48;
   text-decoration: none;
@@ -457,6 +474,7 @@ template {
   .content {
     width: 90%;
     margin: 0 auto;
+    padding-top: 5rem;
   }
   .content .form-controls {
     display: -webkit-box;
@@ -466,6 +484,13 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    width: 40%;
+    margin: 0 auto 0 10px;
   }
 }
 
@@ -479,13 +504,6 @@ main {
     display: grid;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  main {
-    width: 768px;
-    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
