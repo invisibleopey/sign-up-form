@@ -42,3 +42,14 @@
     color: $secondary-color;
   }
 }
+
+@media screen and (min-width: #{$tablet-width}) {
+  .image-sidebar {
+    height: 100vh;
+    .image {
+      img {
+        height: 99vh;
+      }
+    }
+  }
+}

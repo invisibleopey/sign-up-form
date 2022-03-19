@@ -5,10 +5,11 @@
     font-size: clamp(1rem, 2.5vw, 2rem);
   }
   form {
-    div {
+    .form-controls div {
       display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
+      width: 11rem;
       input {
         width: 10rem;
         border: 1px solid #e5e7eb;
@@ -34,5 +35,16 @@
     color: #596d48;
     text-decoration: none;
     font-size: larger;
+  }
+}
+
+@media screen and (min-width: #{$tablet-width}) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    .form-controls {
+      display: flex;
+      flex-flow: row wrap;
+    }
   }
 }
