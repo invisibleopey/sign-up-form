@@ -397,6 +397,15 @@ template {
   color: rgba(255, 255, 255, 0.9);
 }
 
+@media screen and (min-width: 768px) {
+  .image-sidebar {
+    height: 100vh;
+  }
+  .image-sidebar .image img {
+    height: 99vh;
+  }
+}
+
 .content {
   padding: 1rem;
 }
@@ -406,7 +415,7 @@ template {
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
-.content form div {
+.content form .form-controls div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,21 +424,22 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 1rem;
+  width: 11rem;
 }
 
-.content form div input {
+.content form .form-controls div input {
   width: 10rem;
   border: 1px solid #e5e7eb;
 }
 
-.content form div input:focus {
+.content form .form-controls div input:focus {
   border: 1px solid blue;
   outline: none;
   -webkit-box-shadow: 4px 4px 2px 0px rgba(189, 188, 188, 0.75);
           box-shadow: 4px 4px 2px 0px rgba(189, 188, 188, 0.75);
 }
 
-.content form div input:invalid:focus {
+.content form .form-controls div input:invalid:focus {
   border: 1px solid red;
 }
 
@@ -447,7 +457,32 @@ template {
   font-size: larger;
 }
 
+@media screen and (min-width: 768px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content .form-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
 main {
   width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
