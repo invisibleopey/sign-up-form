@@ -408,11 +408,7 @@ template {
 
 .content {
   padding: 1rem;
-}
-
-.content p,
-.content label {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  padding-top: 5rem;
 }
 
 .content form .form-controls div {
@@ -483,6 +479,13 @@ main {
     display: grid;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 768px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
