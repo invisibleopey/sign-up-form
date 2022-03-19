@@ -59,3 +59,10 @@
     }
   }
 }
+
+@media screen and (min-width: #{$lg-screens}) {
+  .content {
+    width: 40%;
+    margin: 0 auto 0 10px;
+  }
+}
