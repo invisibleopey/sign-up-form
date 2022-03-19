@@ -343,7 +343,7 @@ template {
 
 @font-face {
   font-family: 'Norse Bold';
-  src: url(/assets/fonts/Norse-Bold.otf);
+  src: url(../assets/fonts/Norse-Bold.otf);
 }
 
 .image-sidebar {
