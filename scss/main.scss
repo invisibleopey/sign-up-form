@@ -6,8 +6,4 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  @media screen and (min-width: #{$lg-screens}) {
-    width: $tablet-width;
-    margin: 0 auto;
-  }
 }
